@@ -1,14 +1,30 @@
-"use client"
+"use client";
 import Navbar from "../../components/Navbar";
 import { store } from "../../redux/store/store";
 import { Provider } from "react-redux";
+import { useAppSelector } from "../../redux/hooks";
+
+// This component is wrapped in <Provider>, so we can safely use Redux hooks here
+const HomeContent = () => {
+  const themeMode = useAppSelector((state) => state.darkTheme.mode);
+
+  return (
+    <div
+      className={`w-full min-h-screen ${
+        themeMode === "dark"
+          ? "bg-gray-dark text-gray-light"
+          : "bg-lightMode text-gray-dark"
+      } font-poppins`}
+    >
+      <Navbar />
+    </div>
+  );
+};
 
 export default function Home() {
   return (
     <Provider store={store}>
-      <div className="w-full min-h-screen bg-gray-dark font-poppins">
-        <Navbar />
-      </div>
+      <HomeContent />
     </Provider>
   );
 }
