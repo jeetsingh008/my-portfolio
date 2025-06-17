@@ -19,7 +19,7 @@ const HeroSection = () => {
       {/* Call to action part */}
       <div className="max-xl:absolute max-xl:top-4/5 max-xl:-translate-y-4/5 flex justify-center items-center">
         <div className="flex-col items-center gap-3">
-          <p className="text-center text-4xl sm:text-6xl md:text-7xl xl:text-7xl font-bold tracking-wide font-orbitron">
+          <p className="text-center text-4xl sm:text-6xl md:text-7xl xl:text-7xl font-semibold tracking-wide">
             From <br /> <span>Concept</span>
             <br />
             to <br /> <span>Creation</span>
