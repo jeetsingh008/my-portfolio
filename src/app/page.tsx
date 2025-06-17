@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar";
 import { store } from "../../redux/store/store";
 import { Provider } from "react-redux";
 import { useAppSelector } from "../../redux/hooks";
+import HeroSection from "../../components/home/Hero";
 
 // This component is wrapped in <Provider>, so we can safely use Redux hooks here
 const HomeContent = () => {
@@ -17,6 +18,7 @@ const HomeContent = () => {
       } font-poppins`}
     >
       <Navbar />
+      <HeroSection />
     </div>
   );
 };
