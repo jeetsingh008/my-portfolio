@@ -14,18 +14,12 @@
   --font-poppins: "Poppins";
   --font-orbitron: "Orbitron";
 
+  --color-lightMode: #FFFDF6;
   --color-orange: #ffa500;
   --color-black: #000000;
   --color-white: #ffffff;
   --color-gray-dark: #1a1a1a;
   --color-gray-light: #cccccc;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
