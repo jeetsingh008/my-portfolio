@@ -13,7 +13,7 @@ const HomeContent = () => {
     <div
       className={`w-full min-h-screen ${
         themeMode === "dark"
-          ? "bg-gray-dark text-gray-light"
+          ? "bg-gray-dark text-snow"
           : "bg-lightMode text-gray-dark"
       } font-poppins`}
     >
