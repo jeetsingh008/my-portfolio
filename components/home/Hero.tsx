@@ -22,9 +22,9 @@ const HeroSection = () => {
           <p className="text-center text-4xl sm:text-6xl md:text-7xl xl:text-7xl font-semibold tracking-wide">
             From <br /> <span>Concept</span>
             <br />
-            to <br /> <span>Creation</span>
+            to <br /> <span>Creation</span><span className="text-orange animate-pulse font-orbitron">.</span>
           </p>
-          <div className="flex justify-center items-center m-5">
+          <div className="flex justify-center items-center mt-6">
             <button className="border border-orange rounded-sm text-xl lg:text-2xl xl:text-3xl px-3 py-2 hover:bg-orange hover:text-gray-dark transition-colors duration-300 ease-in-out">
               Contact Us
             </button>
