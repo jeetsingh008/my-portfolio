@@ -11,9 +11,9 @@ const HomeContent = () => {
 
   return (
     <div
-      className={`w-full min-h-screen ${
+      className={`w-full min-h-screen transition-colors duration-300 ease-in-out ${
         themeMode === "dark"
-          ? "bg-gray-dark text-gray-light"
+          ? "bg-gray-dark text-snow"
           : "bg-lightMode text-gray-dark"
       } font-poppins`}
     >
