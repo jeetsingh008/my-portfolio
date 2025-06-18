@@ -12,8 +12,8 @@ const Navbar = () => {
     <div className="px-4 py-3 flex justify-between items-center">
       {/* logo part */}
       <div>
-        <p className="text-xl md:text-3xl lg:text-4xl xl:text5xl 2xl:text-6xl font-bold font-orbitron">
-          Jeet<span className="text-orange">.</span>
+        <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold font-orbitron">
+          Jeet<span className="text-orange animate-pulse">.</span>
         </p>
       </div>
 
