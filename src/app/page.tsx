@@ -4,6 +4,7 @@ import { store } from "../../redux/store/store";
 import { Provider } from "react-redux";
 import { useAppSelector } from "../../redux/hooks";
 import HeroSection from "../../components/home/Hero";
+import GetInTouch from "../../components/home/GetInTouch";
 
 // This component is wrapped in <Provider>, so we can safely use Redux hooks here
 const HomeContent = () => {
@@ -19,6 +20,7 @@ const HomeContent = () => {
     >
       <Navbar />
       <HeroSection />
+      <GetInTouch />
     </div>
   );
 };
