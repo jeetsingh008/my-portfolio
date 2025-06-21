@@ -1,22 +1,22 @@
 import Image from "next/image";
 import React from "react";
-import thinkingman from "../../public/thinking-man.png";
+import aboutsectionimg from "../../public/aboutimg.png";
 import { useAppSelector } from "../../redux/hooks";
 
 const GetInTouch = () => {
   const themeState = useAppSelector((state) => state.darkTheme.mode);
   return (
     <div className="w-full">
-      <div className="flex flex-col md:flex-row items-center gap-4 md:gap-0 justify-evenly py-8">
+      <div className="flex flex-col md:flex-row items-center gap-4 md:gap-0 justify-evenly py-10">
         {/* Image part */}
         {/* Set width to 100% on small screens and 50% (w-1/2) on md and above */}
         {/* Added flex + justify-center to center the image horizontally in its container */}
         <div className="w-full md:w-1/2 flex flex-col items-start bg-amber-0">
           <Image
             alt="Thinking man"
-            src={thinkingman}
-            width={600}
-            height={600}
+            src={aboutsectionimg}
+            width={500}
+            height={500}
             style={{ objectFit: "cover" }} // Replaced 'objectFit' prop (deprecated) with style
           />
           <div className="flex gap-2 justify-start items-center pl-12">
