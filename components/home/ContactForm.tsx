@@ -45,7 +45,8 @@ const ContactForm = () => {
   return (
     <Form {...form}>
       <form
-        onSubmit={form.handleSubmit(onSubmit)}
+        action="https://formspree.io/f/mgvybkoq"
+        method="POST"
         className="text-white flex flex-col gap-5"
       >
         <FormField

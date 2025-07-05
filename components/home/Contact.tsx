@@ -17,7 +17,7 @@ const ContactSection = () => {
   return (
     <div className="py-12 md:py-20 px-4 md:px-8 xl:px-16 flex flex-col md:flex-row justify-evenly items-center gap-4 md:gap-0 relative overflow-hidden">
       {/* Text part */}
-      <div className="flex flex-col gap-4 items-center md:items-start">
+      <div className="flex flex-col gap-4 items-start">
         <div className="text-start px-8 md:px-4">
           <div className="relative flex py-2">
             <div
@@ -50,7 +50,7 @@ const ContactSection = () => {
         {/* info part */}
 
         <div
-          className={`flex flex-col gap-4 items-start text-start px-9 md:px-5 ${
+          className={`flex flex-col gap-4 items-start text-start px-10 md:px-6 ${
             themeState === "dark" ? "text-gray-light" : "text-gray-dark"
           }`}
         >
