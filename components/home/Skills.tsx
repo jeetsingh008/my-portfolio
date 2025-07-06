@@ -44,7 +44,7 @@ const SkillsSection = () => {
         <div
           className={`text-xl p-2 mx-6 mt-6 rounded-full ${
             themeState === "light"
-              ? "bg-gray-dark2/30 shadow-sm"
+              ? "bg-white shadow-md"
               : "bg-gray-dark2 shadow-2xl"
           } cursor-pointer w-52`}
         >
@@ -87,12 +87,8 @@ const SkillsSection = () => {
               (imageDetails, index) => (
                 <div
                   key={index}
-                  className={`flex relative group flex-col items-center justify-center basis-1/4 max-w-[100px] p-2 rounded-lg 
-                    ${
-                      themeState === "light"
-                        ? "bg-gray-dark2/20"
-                        : "bg-gray-dark2"
-                    }`}
+                  className={`flex relative group flex-col shadow-lg items-center justify-center basis-1/4 max-w-[100px] p-2 rounded-lg 
+                    ${themeState === "light" ? "bg-white" : "bg-gray-dark2"}`}
                 >
                   <span className="absolute transition-opacity duration-300 ease-in-out px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 -top-8 left-1/2 transform -translate-x-1/2 bg-orange">
                     {imageDetails.name}
