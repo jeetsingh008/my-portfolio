@@ -8,6 +8,7 @@ import GetInTouch from "../../components/home/GetInTouch";
 import SkillsSection from "../../components/home/Skills";
 import PortfolioSection from "../../components/home/Portfolio";
 import ContactSection from "../../components/home/Contact";
+import Footer from "../../components/home/Footer";
 
 // This component is wrapped in <Provider>, so we can safely use Redux hooks here
 const HomeContent = () => {
@@ -27,6 +28,7 @@ const HomeContent = () => {
       <SkillsSection />
       <PortfolioSection />
       <ContactSection />
+      <Footer />
     </div>
   );
 };
