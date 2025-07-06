@@ -54,11 +54,11 @@ const GetInTouch = () => {
               themeState === "light" ? "text-gray-dark" : "text-gray-light/70"
             } tracking-wide text-lg pl-2`}
           >
-            Hi, I'm Jeet Singh — a developer passionate about building clean,
+            Hi, I&apos;m Jeet Singh — a developer passionate about building clean,
             functional web applications. I thrive on transforming ideas into
-            reality through creative and efficient solutions. I'm constantly
+            reality through creative and efficient solutions. I&apos;m constantly
             exploring new tools, skills, and technologies to expand my
-            expertise. Beyond developing solo full-stack projects, I’ve also
+            expertise. Beyond developing solo full-stack projects, I&apos;ve also
             collaborated on complex team-based projects involving daily
             stand-ups, effective communication, version control, and project
             management workflows.
