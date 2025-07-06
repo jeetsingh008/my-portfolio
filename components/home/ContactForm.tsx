@@ -76,7 +76,7 @@ const ContactForm = () => {
                     className={`pl-8 py-5 ${
                       themeState === "dark"
                         ? "placeholder:bg-gray-dark bg-gray-dark"
-                        : "placeholder:bg-gray-light bg-gray-light text-black"
+                        : "placeholder:bg-transparent placeholder:text-gray-dark/50 bg-gray-light/70 text-black"
                     }`}
                   />
                 </div>
@@ -112,7 +112,7 @@ const ContactForm = () => {
                     className={`pl-8 py-5 ${
                       themeState === "dark"
                         ? "placeholder:bg-gray-dark bg-gray-dark"
-                        : "placeholder:bg-gray-light bg-gray-light text-black"
+                        : "placeholder:bg-transparent placeholder:text-gray-dark/50  bg-gray-light/70 text-black"
                     }`}
                   />
                 </div>
@@ -148,7 +148,7 @@ const ContactForm = () => {
                     className={`pl-8 py-5 ${
                       themeState === "dark"
                         ? "placeholder:bg-gray-dark bg-gray-dark"
-                        : "placeholder:bg-gray-light bg-gray-light text-black"
+                        : "placeholder:bg-transparent placeholder:text-gray-dark/50 bg-gray-light/70 text-black"
                     }`}
                   />
                 </div>
@@ -184,7 +184,7 @@ const ContactForm = () => {
                     className={`pl-8 resize-none ${
                       themeState === "dark"
                         ? "placeholder:bg-gray-dark bg-gray-dark"
-                        : "placeholder:bg-gray-light bg-gray-light text-black"
+                        : "placeholder:bg-transparent placeholder:text-gray-dark/50 bg-gray-light/70 text-black"
                     }`}
                   />
                 </div>
