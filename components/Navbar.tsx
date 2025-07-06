@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`sticky top-0 z-50 px-4 py-3 flex justify-between items-center transition-shadow duration-300 mx-8 ${
+      className={`sticky top-0 z-50 px-4 py-3 flex justify-between items-center transition-all duration-300 mx-8 ${
         scrolled ? "shadow-xl" : ""
       } ${themeState === "dark" ? "bg-gray-dark/70" : "bg-white/70"}`}
     >
