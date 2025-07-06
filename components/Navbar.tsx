@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useAppDispatch, useAppSelector } from "../redux/hooks";
 import { darkThemeSlice } from "../redux/slices/darkTheme/darkThemeSlice";
 
@@ -8,8 +8,27 @@ const Navbar = () => {
   const dispatch = useAppDispatch();
   const themeState = useAppSelector((state) => state.darkTheme.mode);
 
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="px-4 py-3 flex justify-between items-center">
+    <div
+      className={`sticky top-0 z-50 px-4 py-3 flex justify-between items-center transition-shadow duration-300 mx-8 ${
+        scrolled ? "shadow-2xl" : ""
+      } ${themeState === "dark" ? "bg-gray-dark/80" : "bg-white/80"}`}
+    >
       {/* logo part */}
       <div>
         <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold font-orbitron">
@@ -20,21 +39,14 @@ const Navbar = () => {
       {/* Middle part (links) */}
       <div className="hidden md:block">
         <ul className="flex justify-between items-center gap-4 md:text-lg">
-          <li className="border-b border-transparent cursor-pointer hover:border-orange transition-all ease-in-out duration-300">
-            Home
-          </li>
-          <li className="border-b border-transparent cursor-pointer hover:border-orange transition-all ease-in-out duration-300">
-            About
-          </li>
-          <li className="border-b border-transparent cursor-pointer hover:border-orange transition-all ease-in-out duration-300">
-            Skills
-          </li>
-          <li className="border-b border-transparent cursor-pointer hover:border-orange transition-all ease-in-out duration-300">
-            Portfolio
-          </li>
-          <li className="border-b border-transparent cursor-pointer hover:border-orange transition-all ease-in-out duration-300">
-            Contact
-          </li>
+          {["Home", "About", "Skills", "Portfolio", "Contact"].map((item) => (
+            <li
+              key={item}
+              className="border-b border-transparent cursor-pointer hover:border-orange transition-all ease-in-out duration-300"
+            >
+              {item}
+            </li>
+          ))}
         </ul>
       </div>
 
