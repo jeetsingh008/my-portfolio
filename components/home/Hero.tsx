@@ -62,7 +62,7 @@ const HeroSection = () => {
       {/* Call to action part */}
       <div className="max-md:absolute max-md:top-4/5 max-md:-translate-y-4/5 flex justify-center items-center">
         <div className="flex-col items-center gap-3">
-          <p
+          <span
             className={`text-center ${
               themeState === "light" ? "text-white md:text-black" : ""
             } text-4xl sm:text-5xl md:text-6xl 2xl:text-7xl font-semibold tracking-wide`}
@@ -82,7 +82,7 @@ const HeroSection = () => {
               <span className="text-orange">You</span> grow
               <span className="font-orbitron">.</span>
             </h2>
-          </p>
+          </span>
 
           <div className="flex justify-center items-center mt-6">
             <button className="border border-orange rounded-sm text-xl lg:text-2xl xl:text-3xl px-3 py-2 hover:bg-orange hover:text-gray-dark transition-colors duration-300 ease-in-out">

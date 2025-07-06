@@ -1,16 +1,10 @@
 import React from "react";
 import { useAppSelector } from "../../redux/hooks";
 import { HiOutlinePhone } from "react-icons/hi2";
-import { MdOutlineMailOutline } from "react-icons/md";
-
-// form icons
-import { MdOutlinePersonOutline } from "react-icons/md";
 import { HiOutlineMail } from "react-icons/hi";
 
-import { FaPhone } from "react-icons/fa6";
-import { IoIosChatbubbles } from "react-icons/io";
 import ContactForm from "./ContactForm";
-import { Card, CardHeader } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 
 const ContactSection = () => {
   const themeState = useAppSelector((state) => state.darkTheme.mode);
@@ -31,7 +25,7 @@ const ContactSection = () => {
               <div className="h-10 w-[2px] bg-gray-light/70 items-center hidden md:block"></div>
             </div>
             <h1 className="text-3xl pl-2 md:text-5xl 2xl:text-6xl font-semibold tracking-wide mb-4">
-              Have an idea? <br /> Let's bring it to life <br />{" "}
+              Have an idea? <br /> Let&apos;s bring it to life <br />{" "}
               <span className="text-xl md:text-3xl 2xl:text-4xl font-orbitron animate-pulse">
                 drop me a message!
               </span>
@@ -42,8 +36,8 @@ const ContactSection = () => {
               themeState === "light" ? "text-gray-dark" : "text-gray-light/70"
             } tracking-wide lg:text-lg pl-2`}
           >
-            I'd love to hear from you! Share your details through the form, and
-            I’ll connect with you soon.
+            I&apos;d love to hear from you! Share your details through the form, and
+            I&apos;ll connect with you soon.
           </p>
         </div>
 

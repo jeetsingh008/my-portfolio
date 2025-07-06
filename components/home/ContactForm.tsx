@@ -1,5 +1,4 @@
 "use client";
-import React, { useState } from "react";
 
 import {
   Form,
@@ -23,7 +22,7 @@ import { IoMdChatbubbles } from "react-icons/io";
 import { FaUser } from "react-icons/fa";
 
 const ContactForm = () => {
-  const [submitted, setSubmitted] = useState(false);
+  // const [submitted, setSubmitted] = useState(false);
   const themeState = useAppSelector((state) => state.darkTheme.mode);
 
   const form = useForm<ContactUsSchemaType>({
@@ -36,11 +35,11 @@ const ContactForm = () => {
     },
   });
 
-  const onSubmit = (data: ContactUsSchemaType) => {
-    console.log(data);
-    setSubmitted(true);
-    form.reset();
-  };
+  // const onSubmit = (data: ContactUsSchemaType) => {
+  //   console.log(data);
+  //   setSubmitted(true);
+  //   form.reset();
+  // };
 
   return (
     <Form {...form}>
