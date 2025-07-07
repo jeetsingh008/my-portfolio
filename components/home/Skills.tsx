@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useAppSelector } from "../../redux/hooks";
-import { skillImages, toolsImages } from "../../utils/SkillSectionImages";
+import { skillImages, toolsImages } from "../../lib/SkillSectionImages";
 import Image from "next/image";
 
 type ToggleState = "left" | "right";

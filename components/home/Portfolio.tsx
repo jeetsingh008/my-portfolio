@@ -7,23 +7,6 @@ const PortfolioSection = () => {
     <div className="w-full">
       <div className="flex flex-col md:flex-row items-center gap-4 md:gap-0 justify-evenly py-10">
         {/* Image part */}
-        <div className="w-full md:w-1/2 flex flex-col items-start bg-amber-0">
-          {/* <Image
-            alt="Thinking man"
-            src={aboutsectionimg}
-            width={500}
-            height={500}
-            style={{ objectFit: "cover" }} // Replaced 'objectFit' prop (deprecated) with style
-          /> */}
-          <div className="flex gap-2 justify-start items-center pl-12">
-            <button className="border border-white hover:border-black rounded-sm text-xl px-3 py-2 hover:bg-white hover:text-gray-dark transition-colors duration-300 ease-in-out">
-              HIRE ME
-            </button>
-            <button className="border border-orange rounded-sm text-xl px-3 py-2 hover:bg-orange hover:text-gray-dark transition-colors duration-300 ease-in-out">
-              DOWNLOAD CV
-            </button>
-          </div>
-        </div>
 
         {/* Text part */}
         <div className="w-full md:w-1/2 text-start px-8 md:px-4">
